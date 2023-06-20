@@ -1,16 +1,49 @@
 #[allow(unused_imports)]
+use binary_search::search::*;
+mod binary_search;
+use binary_search::search_insert_position::*;
+
 // use crate::two_pointers::*;
 // use std::println;
 // pub mod two_pointers;
-mod two_pointers;
-use two_pointers::reorder_list::ListNode;
+// mod two_pointers;
+// use two_pointers::reorder_list::*;
 
 fn main() {
-    let n = ListNode::new(1);
+    let vec = vec![0, 2, 3, 5, 5, 8, 8, 9];
 
-    let mut Box<ListNode> ln;
+    // let r = max_lower_or_equal(&vec, 5);
+    //
+    let r = search_insert(vec, 4);
+    println!("r={r}");
 
-
+    // let mut n1 = ListNode::new(1);
+    // let mut n2 = ListNode::new(2);
+    // let mut n3 = ListNode::new(3);
+    // let mut n4 = ListNode::new(4);
+    // let n5 = ListNode::new(5);
+    //
+    // n4.next = Some(Box::new(n5));
+    // n3.next = Some(Box::new(n4));
+    // n2.next = Some(Box::new(n3));
+    // n1.next = Some(Box::new(n2));
+    //
+    // reorder_list(&mut Some(Box::new(n1)));
+    //
+    // let mut n1 = ListNode::new(1);
+    // let mut n2 = ListNode::new(2);
+    // let mut n3 = ListNode::new(3);
+    // let mut n4 = ListNode::new(4);
+    // let mut n5 = ListNode::new(5);
+    // let n6 = ListNode::new(6);
+    //
+    // n5.next = Some(Box::new(n6));
+    // n4.next = Some(Box::new(n5));
+    // n3.next = Some(Box::new(n4));
+    // n2.next = Some(Box::new(n3));
+    // n1.next = Some(Box::new(n2));
+    //
+    // reorder_list(&mut Some(Box::new(n1)));
     // let res = str_str("abcd".to_string(), "bc".to_string());
     // println!("res={res}");
 
