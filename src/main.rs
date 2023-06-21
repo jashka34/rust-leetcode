@@ -1,5 +1,5 @@
 #[allow(unused_imports)]
-use binary_search::search::*;
+use binary_search::sqrt::*;
 mod binary_search;
 use binary_search::search_insert_position::*;
 
@@ -10,13 +10,16 @@ use binary_search::search_insert_position::*;
 // use two_pointers::reorder_list::*;
 
 fn main() {
-    let vec = vec![0, 2, 3, 5, 5, 8, 8, 9];
+    // let vec = vec![0, 2, 3, 5, 5, 8, 8, 9];
 
     // let r = max_lower_or_equal(&vec, 5);
     //
-    let r = search_insert(vec, 4);
+    let r = my_sqrt(11);
     println!("r={r}");
-
+    let r = my_sqrt(12);
+    println!("r={r}");
+    let r = my_sqrt(13);
+    println!("r={r}");
     // let mut n1 = ListNode::new(1);
     // let mut n2 = ListNode::new(2);
     // let mut n3 = ListNode::new(3);
